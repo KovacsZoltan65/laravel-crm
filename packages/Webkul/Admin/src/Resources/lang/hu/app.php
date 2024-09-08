@@ -6,14 +6,14 @@ return [
         'lead'            => 'Lead',
         'quotes'          => 'Quotes',
         'mail'            => 'Mail',
-        'inbox'           => 'Inbox',
-        'draft'           => 'Draft',
-        'outbox'          => 'Outbox',
-        'sent'            => 'Sent',
-        'trash'           => 'Trash',
-        'activities'      => 'Activities',
+        'inbox'           => 'Beérkezett üzenetek',
+        'draft'           => 'Piszkozat',
+        'outbox'          => 'Kimenő',
+        'sent'            => 'Küldött',
+        'trash'           => 'Szemét',
+        'activities'      => 'Tevékenységek',
         'webhook'         => 'Webhook',
-        'contacts'        => 'Contacts',
+        'contacts'        => 'Kapcsolatok',
         'persons'         => 'Persons',
         'organizations'   => 'Organizations',
         'products'        => 'Products',
@@ -25,7 +25,7 @@ return [
         'automation'      => 'Automation',
         'attributes'      => 'Attribútumok',
         'pipelines'       => 'Csővezetékek',
-        'sources'         => 'Sources',
+        'sources'         => 'Források',
         'types'           => 'Types',
         'email-templates' => 'Email Templates',
         'workflows'       => 'Workflows',
@@ -112,8 +112,8 @@ return [
                 'file' => [
                     'btn'           => 'File',
                     'title'         => 'Add File',
-                    'title-control' => 'Title',
-                    'name'          => 'Name',
+                    'title-control' => 'Cím',
+                    'name'          => 'Név',
                     'description'   => 'Description',
                     'file'          => 'File',
                     'save-btn'      => 'Save File',
@@ -127,9 +127,9 @@ return [
                 ],
 
                 'activity' => [
-                    'btn'           => 'Activity',
-                    'title'         => 'Add Activity',
-                    'title-control' => 'Title',
+                    'btn'           => 'Tevékenység',
+                    'title'         => 'Tevékenység hozzáadása',
+                    'title-control' => 'Cím',
                     'description'   => 'Description',
                     'schedule-from' => 'Schedule From',
                     'schedule-to'   => 'Schedule To',
@@ -177,12 +177,12 @@ return [
 
                 'empty-placeholders' => [
                     'all' => [
-                        'title'       => 'No Activities Found',
+                        'title'       => 'Nincs tevékenység',
                         'description' => 'No activities found for this. You can add activities by clicking on the button on the left panel.',
                     ],
 
                     'planned' => [
-                        'title'       => 'No Planned Activities Found',
+                        'title'       => 'Nem található tervezett tevékenység',
                         'description' => 'No planned activities found for this. You can add planned activities by clicking on the button on the left panel.',
                     ],
 
@@ -270,14 +270,14 @@ return [
 
                 'filter' => [
                     'apply-filters-btn' => 'Apply Filters',
-                    'back-btn'          => 'Back',
+                    'back-btn'          => 'Vissza',
                     'create-new-filter' => 'Create New Filter',
                     'custom-filters'    => 'Custom Filters',
                     'delete-error'      => 'Something went wrong while deleting the filter, please try again.',
                     'delete-success'    => 'Filter has been deleted successfully.',
                     'empty-description' => 'There is no selected filters available to save. Please select filters to save.',
                     'empty-title'       => 'Add Filters to Save',
-                    'name'              => 'Name',
+                    'name'              => 'Név',
                     'quick-filters'     => 'Quick Filters',
                     'save-btn'          => 'Save',
                     'save-filter'       => 'Save Filter',
@@ -290,7 +290,7 @@ return [
                 ],
 
                 'search' => [
-                    'title' => 'Search',
+                    'title' => 'Keresés',
                 ],
             ],
 
@@ -361,7 +361,7 @@ return [
         'layouts' => [
             'header' => [
                 'mega-search' => [
-                    'title'   => 'Search',
+                    'title'   => 'Keresés',
 
                     'tabs' => [
                         'leads'    => 'Leads',
@@ -372,7 +372,7 @@ return [
 
                     'explore-all-products'          => 'Explore all Products',
                     'explore-all-leads'             => 'Explore all Leads',
-                    'explore-all-contacts'          => 'Explore all Contacts',
+                    'explore-all-contacts'          => 'Fedezze fel az összes névjegyet',
                     'explore-all-quotes'            => 'Explore all Quotes',
                     'explore-all-matching-products' => 'Explore all products matching ":query" (:count)',
                     'explore-all-matching-leads'    => 'Explore all leads matching ":query" (:count)',
@@ -385,9 +385,9 @@ return [
         'attributes' => [
             'lookup' => [
                 'click-to-add'    => 'Click to add',
-                'search'          => 'Search',
+                'search'          => 'Keresés',
                 'no-result-found' => 'No result found',
-                'search'          => 'Search...',
+                'search'          => 'Keresés...',
             ],
         ],
 
@@ -395,7 +395,7 @@ return [
             'click-to-add' => 'Click to Add',
             'no-results'   => 'No Results Found',
             'add-as-new'   => 'Add as New',
-            'search'       => 'Search...',
+            'search'       => 'Keresés...',
         ],
 
         'flash-group' => [
@@ -419,7 +419,7 @@ return [
                 'subject'        => 'Subject',
                 'sales-person'   => 'Sales Person',
                 'expired-at'     => 'Expired At',
-                'created-at'     => 'Created At',
+                'created-at'     => 'Létrehozva',
                 'expired-quotes' => 'Expired Quote',
                 'person'         => 'Person',
                 'subtotal'       => 'Subtotal',
@@ -461,7 +461,7 @@ return [
             'address-info'      => 'Address Information',
             'address-info-info' => 'Information about the address related to quote.',
             'quote-items'       => 'Quote Items',
-            'search-products'   => 'Search Products',
+            'search-products'   => 'Termékek keresése',
             'link-to-lead'      => 'Link to lead',
             'quote-item-info'   => 'Add Product Request for this quote.',
             'quote-name'        => 'Quote name',
@@ -497,7 +497,7 @@ return [
             'quote-name'        => 'Quote name',
             'quantity'          => 'Quantity',
             'price'             => 'Price',
-            'search-products'   => 'Search Products',
+            'search-products'   => 'Termékek keresése',
             'discount'          => 'Discount',
             'tax'               => 'Tax',
             'total'             => 'Total',
@@ -533,7 +533,7 @@ return [
                     'emails'            => 'Emails',
                     'id'                => 'ID',
                     'view'              => 'View',
-                    'name'              => 'Name',
+                    'name'              => 'Név',
                     'organization-name' => 'Organization Name',
                 ],
             ],
@@ -576,7 +576,7 @@ return [
                         'file' => [
                             'btn'           => 'File',
                             'title'         => 'Add File',
-                            'title-control' => 'Title',
+                            'title-control' => 'Cím',
                             'name'          => 'File Name',
                             'description'   => 'Description',
                             'file'          => 'File',
@@ -591,9 +591,9 @@ return [
                         ],
 
                         'activity' => [
-                            'btn'           => 'Activity',
+                            'btn'           => 'Tevékenység',
                             'title'         => 'Add Activity',
-                            'title-control' => 'Title',
+                            'title-control' => 'Cím',
                             'description'   => 'Description',
                             'schedule-from' => 'Schedule From',
                             'schedule-to'   => 'Schedule To',
@@ -631,7 +631,7 @@ return [
                     'delete'        => 'Delete',
                     'edit'          => 'Edit',
                     'id'            => 'ID',
-                    'name'          => 'Name',
+                    'name'          => 'Név',
                     'persons-count' => 'Person Count',
                 ],
             ],
@@ -663,7 +663,7 @@ return [
                 'edit'      => 'Edit',
                 'id'        => 'ID',
                 'in-stock'  => 'In Stock',
-                'name'      => 'Name',
+                'name'      => 'Név',
                 'on-hand'   => 'On Hand',
                 'price'     => 'Price',
                 'sku'       => 'SKU',
@@ -729,7 +729,7 @@ return [
                     'description' => 'Description',
                     'edit'        => 'Edit',
                     'id'          => 'ID',
-                    'name'        => 'Name',
+                    'name'        => 'Név',
                 ],
 
                 'edit' => [
@@ -737,7 +737,7 @@ return [
                 ],
 
                 'create' => [
-                    'name'        => 'Name',
+                    'name'        => 'Név',
                     'title'       => 'Create Group',
                     'description' => 'Description',
                     'save-btn'    => 'Save Group',
@@ -766,7 +766,7 @@ return [
                     'description'     => 'Description',
                     'edit'            => 'Edit',
                     'id'              => 'ID',
-                    'name'            => 'Name',
+                    'name'            => 'Név',
                     'permission-type' => 'Permission Type',
                 ],
             ],
@@ -774,11 +774,11 @@ return [
             'create' => [
                 'access-control' => 'Access Control',
                 'all'            => 'All',
-                'back-btn'       => 'Back',
+                'back-btn'       => 'Vissza',
                 'custom'         => 'Custom',
                 'description'    => 'Description',
                 'general'        => 'Általános',
-                'name'           => 'Name',
+                'name'           => 'Név',
                 'permissions'    => 'Permissions',
                 'save-btn'       => 'Save Role',
                 'title'          => 'Create Role',
@@ -787,11 +787,11 @@ return [
             'edit' => [
                 'access-control' => 'Access Control',
                 'all'            => 'All',
-                'back-btn'       => 'Back',
+                'back-btn'       => 'Vissza',
                 'custom'         => 'Custom',
                 'description'    => 'Description',
                 'general'        => 'Általános',
-                'name'           => 'Name',
+                'name'           => 'Név',
                 'permissions'    => 'Permissions',
                 'save-btn'       => 'Save Role',
                 'title'          => 'Edit Role',
@@ -812,11 +812,11 @@ return [
                     'description' => 'Description',
                     'edit'        => 'Edit',
                     'id'          => 'ID',
-                    'name'        => 'Name',
+                    'name'        => 'Név',
                 ],
 
                 'create' => [
-                    'name'     => 'Name',
+                    'name'     => 'Név',
                     'save-btn' => 'Save Type',
                     'title'    => 'Create Type',
                 ],
@@ -833,18 +833,18 @@ return [
                 'create-success' => 'Source created successfully.',
                 'delete-failed'  => 'Source can not be deleted.',
                 'delete-success' => 'Source deleted successfully.',
-                'title'          => 'Sources',
+                'title'          => 'Források',
                 'update-success' => 'Source updated successfully.',
 
                 'datagrid' => [
                     'delete' => 'Delete',
                     'edit'   => 'Edit',
                     'id'     => 'ID',
-                    'name'   => 'Name',
+                    'name'   => 'Név',
                 ],
 
                 'create' => [
-                    'name'     => 'Name',
+                    'name'     => 'Név',
                     'save-btn' => 'Save Type',
                     'title'    => 'Create Type',
                 ],
@@ -868,7 +868,7 @@ return [
                     'description' => 'Description',
                     'edit'        => 'Edit',
                     'id'          => 'ID',
-                    'name'        => 'Name',
+                    'name'        => 'Név',
                 ],
             ],
 
@@ -887,10 +887,10 @@ return [
             'create' => [
                 'title'                  => 'Create Workflow',
                 'event'                  => 'Event',
-                'back-btn'               => 'Back',
+                'back-btn'               => 'Vissza',
                 'save-btn'               => 'Save Workflow',
-                'name'                   => 'Name',
-                'basic-details'          => 'Basic Details',
+                'name'                   => 'Név',
+                'basic-details'          => 'Alapvető részletek',
                 'description'            => 'Description',
                 'actions'                => 'Actions',
                 'basic-details-info'     => 'Put the basic information of the workflow.',
@@ -922,10 +922,10 @@ return [
             'edit' => [
                 'title'                  => 'Edit Workflow',
                 'event'                  => 'Event',
-                'back-btn'               => 'Back',
+                'back-btn'               => 'Vissza',
                 'save-btn'               => 'Save Workflow',
-                'name'                   => 'Name',
-                'basic-details'          => 'Basic Details',
+                'name'                   => 'Név',
+                'basic-details'          => 'Alapvető részletek',
                 'description'            => 'Description',
                 'actions'                => 'Actions',
                 'type'                   => 'Type',
@@ -966,7 +966,7 @@ return [
 
                 'datagrid'       => [
                     'id'     => 'ID',
-                    'title'  => 'Title',
+                    'title'  => 'Cím',
                     'edit'   => 'Edit',
                     'delete' => 'Delete',
                 ],
@@ -977,16 +977,16 @@ return [
                 'attribute-label-color'    => 'Attribute Label Color',
                 'attributes'               => 'Attribútumok',
                 'attributes-info'          => 'Add custom attributes to the form.',
-                'background-color'         => 'Background Color',
+                'background-color'         => 'Háttérszín',
                 'create-lead'              => 'Create Lead',
                 'customize-webform'        => 'Customize Webform',
                 'customize-webform-info'   => 'Customize your web form with element colors of your choosing.',
                 'description'              => 'Description',
                 'display-custom-message'   => 'Display custom message',
-                'form-background-color'    => 'Form Background Color',
+                'form-background-color'    => 'Űrlap háttérszíne',
                 'form-submit-btn-color'    => 'Form Submit Button Color',
                 'form-submit-button-color' => 'Form Submit Button Color',
-                'form-title-color'         => 'Form Title Color',
+                'form-title-color'         => 'Űrlap cím színe',
                 'general'                  => 'Általános',
                 'leads'                    => 'Leads',
                 'person'                   => 'Person',
@@ -1001,7 +1001,7 @@ return [
                 'attribute-label-color'     => 'Attribute Label Color',
                 'attributes'                => 'Attribútumok',
                 'attributes-info'           => 'Add custom attributes to the form.',
-                'background-color'          => 'Background Color',
+                'background-color'          => 'Háttérszín',
                 'code-snippet'              => 'Code Snippet',
                 'copied'                    => 'Copied',
                 'copy'                      => 'Copy',
@@ -1011,10 +1011,10 @@ return [
                 'description'               => 'Description',
                 'display-custom-message'    => 'Display custom message',
                 'embed'                     => 'Embed',
-                'form-background-color'     => 'Form Background Color',
+                'form-background-color'     => 'Űrlap háttérszíne',
                 'form-submit-btn-color'     => 'Form Submit Button Color',
                 'form-submit-button-color'  => 'Form Submit Button Color',
-                'form-title-color'          => 'Form Title Color',
+                'form-title-color'          => 'Űrlap cím színe',
                 'general'                   => 'Általános',
                 'preview'                   => 'Preview',
                 'person'                    => 'Person',
@@ -1040,7 +1040,7 @@ return [
                     'delete'       => 'Delete',
                     'edit'         => 'Edit',
                     'id'           => 'ID',
-                    'name'         => 'Name',
+                    'name'         => 'Név',
                     'subject'      => 'Subject',
                 ],
             ],
@@ -1053,7 +1053,7 @@ return [
                 'content'              => 'Content',
                 'subject-placeholders' => 'Subject Placeholders',
                 'general'              => 'Általános',
-                'name'                 => 'Name',
+                'name'                 => 'Név',
             ],
 
             'edit' => [
@@ -1064,7 +1064,7 @@ return [
                 'content'              => 'Content',
                 'subject-placeholders' => 'Subject Placeholders',
                 'general'              => 'Általános',
-                'name'                 => 'Name',
+                'name'                 => 'Név',
             ],
         ],
 
@@ -1081,13 +1081,13 @@ return [
                     'delete'      => 'Delete',
                     'edit'        => 'Edit',
                     'id'          => 'ID',
-                    'name'        => 'Name',
+                    'name'        => 'Név',
                     'users'       => 'Felhasználók',
-                    'created-at'  => 'Created At',
+                    'created-at'  => 'Létrehozva',
                 ],
 
                 'create' => [
-                    'name'     => 'Name',
+                    'name'     => 'Név',
                     'save-btn' => 'Save Tag',
                     'title'    => 'Create Tag',
                     'color'    => 'Color',
@@ -1118,13 +1118,13 @@ return [
 
                 'datagrid' => [
                     'active'        => 'Active',
-                    'created-at'    => 'Created At',
+                    'created-at'    => 'Létrehozva',
                     'delete'        => 'Delete',
                     'edit'          => 'Edit',
                     'email'         => 'Email',
                     'id'            => 'ID',
                     'inactive'      => 'Inactive',
-                    'name'          => 'Name',
+                    'name'          => 'Név',
                     'status'        => 'Status',
                     'update-status' => 'Update Status',
                     'users'         => 'Felhasználók',
@@ -1137,7 +1137,7 @@ return [
                     'global'           => 'Global',
                     'group'            => 'Group',
                     'individual'       => 'Individual',
-                    'name'             => 'Name',
+                    'name'             => 'Név',
                     'password'         => 'Password',
                     'permission'       => 'Permission',
                     'role'             => 'Role',
@@ -1168,7 +1168,7 @@ return [
                     'edit'        => 'Edit',
                     'id'          => 'ID',
                     'is-default'  => 'Is Default',
-                    'name'        => 'Name',
+                    'name'        => 'Név',
                     'no'          => 'No',
                     'rotten-days' => 'Rotten Days',
                     'yes'         => 'Yes',
@@ -1178,7 +1178,7 @@ return [
             'create' => [
                 'title'                => 'Create Pipeline',
                 'save-btn'             => 'Save Pipeline',
-                'name'                 => 'Name',
+                'name'                 => 'Név',
                 'rotten-days'          => 'Rotten Days',
                 'mark-as-default'      => 'Mark as Default',
                 'general'              => 'Általános',
@@ -1199,7 +1199,7 @@ return [
             'edit'  => [
                 'title'                => 'Edit Pipeline',
                 'save-btn'             => 'Save Pipeline',
-                'name'                 => 'Name',
+                'name'                 => 'Név',
                 'rotten-days'          => 'Rotten Days',
                 'mark-as-default'      => 'Mark as Default',
                 'general'              => 'Általános',
@@ -1230,7 +1230,7 @@ return [
                     'id'          => 'ID',
                     'delete'      => 'Delete',
                     'edit'        => 'Edit',
-                    'name'        => 'Name',
+                    'name'        => 'Név',
                     'entity-type' => 'Entity Type',
                     'end-point'   => 'End Point',
                 ],
@@ -1255,7 +1255,7 @@ return [
                 'x-www-form-urlencoded' => 'x-www-form-urlencoded',
                 'raw'                   => 'Raw',
                 'general'               => 'Általános',
-                'name'                  => 'Name',
+                'name'                  => 'Név',
                 'entity-type'           => 'Entity Type',
                 'insert-placeholder'    => 'Insert Placeholder',
                 'description'           => 'Description',
@@ -1283,7 +1283,7 @@ return [
                 'x-www-form-urlencoded' => 'x-www-form-urlencoded',
                 'raw'                   => 'Raw',
                 'general'               => 'Általános',
-                'name'                  => 'Name',
+                'name'                  => 'Név',
                 'entity-type'           => 'Entity Type',
                 'insert-placeholder'    => 'Insert Placeholder',
                 'description'           => 'Description',
@@ -1304,12 +1304,12 @@ return [
 
                 'datagrid' => [
                     'id'              => 'ID',
-                    'name'            => 'Name',
+                    'name'            => 'Név',
                     'contact-name'    => 'Contact Name',
                     'delete'          => 'Delete',
                     'edit'            => 'Edit',
                     'view'            => 'View',
-                    'created-at'      => 'Created At',
+                    'created-at'      => 'Létrehozva',
                     'products'        => 'Products',
                     'contact-emails'  => 'Contact Emails',
                     'contact-numbers' => 'Contact Numbers',
@@ -1342,7 +1342,7 @@ return [
                     'delete'         => 'Delete',
                     'delete-failed'  => 'Location can not be deleted.',
                     'delete-success' => 'Location deleted successfully.',
-                    'name'           => 'Name',
+                    'name'           => 'Név',
                     'save-btn'       => 'Save',
                 ],
 
@@ -1372,7 +1372,7 @@ return [
                     'no'          => 'No',
                     'id'          => 'ID',
                     'code'        => 'Code',
-                    'name'        => 'Name',
+                    'name'        => 'Név',
                     'entity-type' => 'Entity Type',
                     'type'        => 'Type',
                     'is-default'  => 'Is Default',
@@ -1385,7 +1385,7 @@ return [
                 'title'                 => 'Attribútum létrehozása',
                 'save-btn'              => 'Save Attribute',
                 'code'                  => 'Code',
-                'name'                  => 'Name',
+                'name'                  => 'Név',
                 'entity-type'           => 'Entity Type',
                 'type'                  => 'Type',
                 'validations'           => 'Validations',
@@ -1428,7 +1428,7 @@ return [
                 'title'                 => 'Edit Attribute',
                 'save-btn'              => 'Save Attribute',
                 'code'                  => 'Code',
-                'name'                  => 'Name',
+                'name'                  => 'Név',
                 'labels'                => 'Labels',
                 'entity-type'           => 'Entity Type',
                 'type'                  => 'Type',
@@ -1471,11 +1471,11 @@ return [
 
     'activities' => [
         'index' => [
-            'title'      => 'Activities',
+            'title'      => 'Tevékenységek',
 
             'datagrid' => [
                 'comment'       => 'Comment',
-                'created_at'    => 'Created At',
+                'created_at'    => 'Létrehozva',
                 'created_by'    => 'Created By',
                 'edit'          => 'Edit',
                 'id'            => 'ID',
@@ -1488,7 +1488,7 @@ return [
                 'schedule-to'   => 'Schedule To',
                 'schedule_from' => 'Schedule From',
                 'schedule_to'   => 'Schedule To',
-                'title'         => 'Title',
+                'title'         => 'Cím',
                 'is_done'       => 'Is Done',
                 'type'          => 'Type',
                 'update'        => 'Update',
@@ -1500,7 +1500,7 @@ return [
 
         'edit' => [
             'title'           => 'Edit Activity',
-            'back-btn'        => 'Back',
+            'back-btn'        => 'Vissza',
             'save-btn'        => 'Save Activity',
             'type'            => 'Activity Type',
             'call'            => 'Call',
@@ -1524,7 +1524,7 @@ return [
         'create-success'       => 'Activity created successfully.',
         'update-success'       => 'Activity updated successfully.',
         'overlapping-error'    => 'Participants have another meeting at this time.',
-        'mass-update-success'  => 'Activities updated successfully.',
+        'mass-update-success'  => 'A tevékenységek sikeresen frissítve.',
         'destroy-success'      => 'Activity deleted successfully.',
         'delete-failed'        => 'Activity can not be deleted.',
     ],
@@ -1532,11 +1532,11 @@ return [
     'mail' => [
         'index' => [
             'compose'           => 'Compose',
-            'draft'             => 'Draft',
-            'inbox'             => 'Inbox',
-            'outbox'            => 'Outbox',
-            'sent'              => 'Sent',
-            'trash'             => 'Trash',
+            'draft'             => 'Piszkozat',
+            'inbox'             => 'Beérkezett üzenetek',
+            'outbox'            => 'Kimenő',
+            'sent'              => 'Küldött',
+            'trash'             => 'Szemét',
             'compose-mail-btn'  => 'Compose Mail',
             'btn'               => 'Mail',
             'mail'              => [
@@ -1548,17 +1548,17 @@ return [
                 'subject'       => 'Subject',
                 'send-btn'      => 'Send',
                 'message'       => 'Message',
-                'draft'         => 'Draft',
+                'draft'         => 'Piszkozat',
             ],
 
             'datagrid' => [
                 'id'            => 'ID',
-                'from'          => 'From',
-                'to'            => 'To',
-                'subject'       => 'Subject',
-                'tag-name'      => 'Tag Name',
-                'created-at'    => 'Created At',
-                'move-to-inbox' => 'Moved To Inbox',
+                'from'          => 'Tól',
+                'to'            => 'Kinek',
+                'subject'       => 'Téma',
+                'tag-name'      => 'Címke neve',
+                'created-at'    => 'Létrehozva',
+                'move-to-inbox' => 'Áthelyezve a Beérkező levelek mappába',
                 'edit'          => 'Edit',
                 'view'          => 'View',
                 'delete'        => 'Delete',
@@ -1584,8 +1584,8 @@ return [
             'delete'                     => 'Delete',
             'enter-mails'                => 'Enter email id',
             'rotten-days'                => 'Lead is rotten for :days days',
-            'search-an-existing-lead'    => 'Search an existing lead',
-            'search-an-existing-contact' => 'Search an existing contact',
+            'search-an-existing-lead'    => 'Meglévő potenciális ügyfelek keresése',
+            'search-an-existing-contact' => 'Keressen egy meglévő névjegyet',
             'message'                    => 'Message',
             'add-attachments'            => 'Add Attachments',
             'discard'                    => 'Discard',
@@ -1593,7 +1593,7 @@ return [
             'no-result-found'            => 'No Results found',
             'add-new-contact'            => 'Add New Contact',
             'description'                => 'Description',
-            'search'                     => 'Search...',
+            'search'                     => 'Keresés...',
             'add-new-lead'               => 'Add New Lead',
             'create-new-contact'         => 'Create New Contact',
             'save-contact'               => 'Save Contact',
@@ -1651,7 +1651,7 @@ return [
                 'stage'               => 'Stage',
                 'rotten-lead'         => 'Rotten Lead',
                 'expected-close-date' => 'Expected Close Date',
-                'created-at'          => 'Created At',
+                'created-at'          => 'Létrehozva',
                 'no'                  => 'No',
                 'yes'                 => 'Yes',
                 'delete'              => 'Delete',
@@ -1661,26 +1661,26 @@ return [
 
             'kanban' => [
                 'rotten-days'            => 'Lead is rotten for :days days',
-                'empty-list'             => 'Your Leads List is Empty',
+                'empty-list'             => 'A potenciális ügyfelek listája üres',
                 'empty-list-description' => 'Create a lead to organize your goals.',
-                'create-lead-btn'        => 'Create Lead',
+                'create-lead-btn'        => 'Ügyfél létrehozása',
 
                 'columns' => [
-                    'contact-person'      => 'Contact Person',
+                    'contact-person'      => 'Kapcsolattartó személy',
                     'id'                  => 'ID',
                     'lead-type'           => 'Lead Type',
                     'lead-value'          => 'Lead Value',
                     'sales-person'        => 'Sales Person',
                     'source'              => 'Source',
-                    'title'               => 'Title',
+                    'title'               => 'Cím',
                     'tags'                => 'Tags',
                     'expected-close-date' => 'Expected Close Date',
-                    'created-at'          => 'Created At',
+                    'created-at'          => 'Létrehozva',
                 ],
 
                 'toolbar' => [
                     'search' => [
-                        'title' => 'Search',
+                        'title' => 'Keresés',
                     ],
 
                     'filters' => [
@@ -1723,7 +1723,7 @@ return [
 
         'common' => [
             'contact' => [
-                'name'           => 'Name',
+                'name'           => 'Név',
                 'email'          => 'Email',
                 'contact-number' => 'Contact Number',
                 'organization'   => 'Organization',
@@ -1809,11 +1809,11 @@ return [
 
     'configuration' => [
         'index' => [
-            'back'         => 'Back',
-            'save-btn'     => 'Save Configuration',
-            'save-success' => 'Configuration Saved Successfully.',
-            'search'       => 'Search',
-            'title'        => 'Configuration',
+            'back'         => 'Vissza',
+            'save-btn'     => 'Konfiguráció mentése',
+            'save-success' => 'A konfiguráció sikeresen elmentve.',
+            'search'       => 'Keresés',
+            'title'        => 'Konfiguráció',
 
             'general'  => [
                 'title'   => 'Általános',
@@ -1821,7 +1821,7 @@ return [
 
                 'general' => [
                     'title'           => 'Általános',
-                    'info'            => 'Update your general settings here.',
+                    'info'            => 'Frissítse általános beállításait itt.',
                     'locale-settings' => [
                         'title'       => 'Nyelv-beállítások',
                         'title-info'  => 'Meghatározza a felhasználói felületen használt nyelvet, például angol (en), francia (fr) vagy japán (ja).',
@@ -1857,7 +1857,7 @@ return [
             ],
 
             'revenue-by-sources' => [
-                'title'       => 'Revenue By Sources',
+                'title'       => 'Bevétel Forrás szerint',
                 'empty-title' => 'No Data Available',
                 'empty-info'  => 'No data available for selected interval',
             ],
@@ -1897,15 +1897,15 @@ return [
         'mail'                 => [
             'title'   => 'Mail',
             'compose' => 'Compose',
-            'inbox'   => 'Inbox',
-            'draft'   => 'Draft',
-            'outbox'  => 'Outbox',
-            'sent'    => 'Sent',
-            'trash'   => 'Trash',
+            'inbox'   => 'Beérkezett üzenetek',
+            'draft'   => 'Piszkozat',
+            'outbox'  => 'Kimenő',
+            'sent'    => 'Küldött',
+            'trash'   => 'Szemét',
             'setting' => 'Setting',
         ],
-        'activities'           => 'Activities',
-        'contacts'             => 'Contacts',
+        'activities'           => 'Tevékenységek',
+        'contacts'             => 'Kapcsolatok',
         'persons'              => 'Persons',
         'person'               => 'Person',
         'organizations'        => 'Organizations',
@@ -1926,7 +1926,7 @@ return [
         'lead-info'            => 'Manage all your leads related settings in the CRM',
         'pipelines'            => 'A raktár nem törölhető',
         'pipelines-info'       => 'Csővezetékek hozzáadása, szerkesztése vagy törlése a CRM-ből',
-        'sources'              => 'Sources',
+        'sources'              => 'Források',
         'sources-info'         => 'Források hozzáadása, szerkesztése vagy törlése a CRM-ből',
         'types'                => 'Types',
         'types-info'           => 'Típusok hozzáadása, szerkesztése vagy törlése a CRM-ből',
@@ -1946,10 +1946,10 @@ return [
         'tags-info'            => 'Címkék hozzáadása, szerkesztése vagy törlése a CRM-ből',
         'my-account'           => 'My Account',
         'sign-out'             => 'Sign Out',
-        'back'                 => 'Back',
-        'name'                 => 'Name',
-        'configuration'        => 'Configuration',
-        'activities'           => 'Activities',
+        'back'                 => 'Vissza',
+        'name'                 => 'Név',
+        'configuration'        => 'Konfiguráció',
+        'activities'           => 'Tevékenységek',
         'howdy'                => 'Howdy!',
         'warehouses'           => 'Raktárak',
         'warehouse'            => 'Warehouse',
@@ -1958,7 +1958,7 @@ return [
 
     'user' => [
         'account' => [
-            'name'                  => 'Name',
+            'name'                  => 'Név',
             'email'                 => 'Email',
             'password'              => 'Password',
             'my_account'            => 'My account',

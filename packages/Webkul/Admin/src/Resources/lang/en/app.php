@@ -387,7 +387,6 @@ return [
                 'click-to-add'    => 'Click to add',
                 'search'          => 'Search',
                 'no-result-found' => 'No result found',
-                'search'          => 'Search...',
             ],
         ],
 
@@ -1949,7 +1948,6 @@ return [
         'back'                 => 'Back',
         'name'                 => 'Name',
         'configuration'        => 'Configuration',
-        'activities'           => 'Activities',
         'howdy'                => 'Howdy!',
         'warehouses'           => 'Warehouses',
         'warehouse'            => 'Warehouse',

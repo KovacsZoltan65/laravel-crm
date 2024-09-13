@@ -1,2 +1,4 @@
 https://github.com/krayin/laravel-crm
 https://medium.com/@pathaksaurav755/top-3-opensource-laravel-crm-packages-2b38be028d55
+
+admin@example.com | password
